@@ -1,0 +1,79 @@
+.imonial-container {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  width: 20%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.slid {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.slid::-webkit-scrollbar {
+  display: none; 
+}
+
+.imonial {
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.imonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #2f4f4f;
+}
+
+.arroww {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.arroww.left {
+  left: 10px;
+}
+
+.arroww.right {
+  right: 10px;
+}
